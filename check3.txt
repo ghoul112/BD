@@ -1,0 +1,11 @@
+INSERT INTO Product *
+VALUES ('P01', 'Samsung Galaxy S20', 'Smartphone','3299'),
+VALUES ('P02', 'Asus Notebook', 'Pc','4599');
+
+INSERT INTO Costumer *
+VALUES ('C01', 'ALI', '71321009'),
+VALUES ('C02', 'ASMA', '77345823');
+
+INSERT INTO Orders *
+VALUES ('C01', 'P01', 'NULL','2','9198'),
+VALUES ('C02', 'P02', '28/05/2020','1','3299');

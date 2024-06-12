@@ -1,0 +1,37 @@
+1)SELECT *,
+FROM Customer;
+
+2)SELECT product_name,category,
+FROM Customer
+where Price BETWEEN 5000 and 1000;
+
+3)SELECT *,
+FROM Product
+ORDER BY Price DESC;
+
+4)SELECT DISTINCT COUNT(Customer_id,Product_id),AVG(total_amount),MAX(total_amount),MIN(total_amount),
+FROM Orders;
+
+5)SELECT Customer_id,
+FROM Orders
+WHERE COUNT(Customer_id)>2;
+
+6)SELECT COUNT(*) 
+FROM      Orders 
+WHERE     YEAR(OrderDate) = '2020' 
+GROUP BY  MONTH(OrderDate);
+
+7)SELECT DISTINCT product_name,Customer_id,OrderDate
+FROM Product als P Cutomer als C Orders als O
+WHERE C.Customer_id==O.Customer_id and P.product_id=O.Product_id;
+
+8)SELECT * 
+FROM Orders
+WHERE OrderDate>= DATEADD(MONTH, -3, GETDATE()) ;
+
+
+9)SELECT *
+FROM Orders als O Customer als C
+WHERE C.Customer_id != O.Customer_id;
+
+
